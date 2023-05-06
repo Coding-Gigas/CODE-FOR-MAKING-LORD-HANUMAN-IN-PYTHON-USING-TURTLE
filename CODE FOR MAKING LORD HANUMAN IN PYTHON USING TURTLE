@@ -1,0 +1,87 @@
+import turtle
+
+# Set up the turtle screen
+wn = turtle.Screen()
+wn.title("Hanuman Ji")
+wn.bgcolor("white")
+wn.setup(width=800, height=600)
+
+# Create a turtle object
+hanuman = turtle.Turtle()
+
+# Set the turtle speed
+hanuman.speed(0)
+
+# Draw Hanuman ji's face
+hanuman.color("orange")
+hanuman.begin_fill()
+hanuman.circle(100)
+hanuman.end_fill()
+
+# Draw Hanuman ji's eyes
+hanuman.penup()
+hanuman.goto(-40, 50)
+hanuman.color("white")
+hanuman.begin_fill()
+hanuman.circle(20)
+hanuman.end_fill()
+
+hanuman.goto(40, 50)
+hanuman.color("white")
+hanuman.begin_fill()
+hanuman.circle(20)
+hanuman.end_fill()
+
+hanuman.goto(-30, 70)
+hanuman.color("black")
+hanuman.begin_fill()
+hanuman.circle(10)
+hanuman.end_fill()
+
+hanuman.goto(30, 70)
+hanuman.color("black")
+hanuman.begin_fill()
+hanuman.circle(10)
+hanuman.end_fill()
+
+# Draw Hanuman ji's mouth
+hanuman.penup()
+hanuman.goto(-20, 10)
+hanuman.color("black")
+hanuman.pendown()
+hanuman.right(45)
+hanuman.circle(30, 90)
+hanuman.penup()
+
+# Draw Hanuman ji's ears
+hanuman.goto(-100, 130)
+hanuman.color("orange")
+hanuman.begin_fill()
+hanuman.circle(20)
+hanuman.end_fill()
+
+hanuman.goto(80, 130)
+hanuman.color("orange")
+hanuman.begin_fill()
+hanuman.circle(20)
+hanuman.end_fill()
+
+# Draw Hanuman ji's crown
+hanuman.goto(-100, 170)
+hanuman.color("yellow")
+hanuman.begin_fill()
+hanuman.right(30)
+hanuman.forward(50)
+hanuman.left(60)
+hanuman.forward(50)
+hanuman.left(120)
+hanuman.forward(50)
+hanuman.left(60)
+hanuman.forward(50)
+hanuman.end_fill()
+
+# Hide the turtle object
+hanuman.hideturtle()
+
+# Keep the turtle window open
+turtle.done()
